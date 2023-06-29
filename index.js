@@ -2,7 +2,7 @@ function calculateBMI (weight,height){
     height = document.getElementById('height');
     weight = document.getElementById('weight');
     const heightPower = Math.pow(+height.value, 2);
-    const BMI = ((+weight.value / heightPower) * 10000).toFixed(1);
+    const BMI = ((+weight.value / heightPower) * 10000).toFixed(2);
     //в задании сказано округлить результат до двух десятитысччных знаков с помощью Math,round(), но тогда результат округляется либо до 0 либо до 1, а в расшифровке результатов даны значения от 18.5 и выше
     const result = document.querySelector('.result');
     result.innerText = `Ваш индекс массы тела (ИМТ): ${BMI}`;
